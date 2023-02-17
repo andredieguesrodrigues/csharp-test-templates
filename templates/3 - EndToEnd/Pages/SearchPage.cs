@@ -21,7 +21,7 @@ namespace TestTemplates.Templates._3___EndToEnd.Pages
         {
             get
             {
-                return this.driver.FindElement(By.XPath(""));
+                return this.driver.FindElement(By.XPath("")); //Add locator
             }
         }
 
@@ -29,14 +29,14 @@ namespace TestTemplates.Templates._3___EndToEnd.Pages
         {
             get
             {
-                return this.driver.FindElement(By.XPath(""));
+                return this.driver.FindElement(By.XPath("")); //Add locator
             }
         }
 
         public void waitComponent(int timeout)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeout));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath(""))); //Add locator
         }
 
         public void clickProduct()

@@ -17,7 +17,7 @@ namespace TestTemplates.Templates._3___EndToEnd.Pages
         {
             get
             {
-                return this.driver.FindElement(By.XPath("")); //tbd
+                return this.driver.FindElement(By.XPath("")); //Add locator
             }
         }
 
